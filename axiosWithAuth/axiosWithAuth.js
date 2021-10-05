@@ -11,7 +11,7 @@ const instance = axios.create({
   },
 });
 
-const axiosWithAuth = ({ method, endpoint, body = null }) => {
+const axiosWithAuth = ({ method = "get", endpoint, body = null }) => {
   // switch statement to allow for configurability
   switch (method) {
     case "get":
