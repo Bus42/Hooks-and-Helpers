@@ -5,7 +5,6 @@ const initialFormValues = {
   firstName: "",
   lastName: "",
   email: "",
-  reason: "How Can I Help?",
   comments: "",
 };
 
@@ -13,13 +12,14 @@ const useForm = (state = initialFormValues) => {
   const [formValues, setFormValues] = useState(state);
 
   const handleChange = (e) => {
+    //   account for radio and check boxes here
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
   const clearForm = () => {
     setFormValues(initialFormValues);
-  }
+  };
 
   return [formValues, handleChange, clearForm];
 };
