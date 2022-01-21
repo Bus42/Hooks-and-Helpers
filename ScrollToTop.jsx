@@ -50,7 +50,7 @@ const ScrollToTop = () => {
       aria-label="scroll to top"
       icon={<ArrowUpIcon />}
       size="lg"
-      colorScheme="tertiary"
+      colorScheme="black"
       variant="outline"
       border="2px solid"
       ref={scrollButton}
